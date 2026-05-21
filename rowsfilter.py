@@ -17,3 +17,7 @@ print(high_salary)
 filtered = df[(df['Age'] > 30) & (df['Salary'] > 50000)]
 print(f'Employee list age > 30 and + salary > 50000')
 print(filtered)
+# using or condition
+filtered_or = df[(df['Age'] > 35) | (df["Performance Score"] > 90)]
+print('Employees older than 35 OR performance score > 90')
+print(filtered_or)
