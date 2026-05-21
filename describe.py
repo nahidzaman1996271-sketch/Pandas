@@ -12,3 +12,5 @@ data = {
 df = pd.DataFrame(data)
 print("Sample Dataframe")
 print(df)
+print('Descriptive Statistics')
+print(df.describe())
