@@ -1,0 +1,16 @@
+
+import pandas as pd
+
+data = {
+    "Name": ['Nahid','Ibn','Zaman','Ikfa','Symooon'],
+    "Age": [10,20,30,40,50],
+    "Salary": [900000,5000,6000,40000,100000],
+    "Performance Score": [20,50,60,40,15]
+}
+
+df = pd.DataFrame(data)
+print(df)
+# .loc[]
+# df.loc[row_index, "Column_Name" = new_value]
+df.loc[0,'Salary'] = 50000
+print(df)
