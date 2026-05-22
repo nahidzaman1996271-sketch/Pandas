@@ -1,6 +1,5 @@
-# dropna()
-# axis = 0 means the missings values in the rows will be deleted
-# axis = 1 means the missings values in the columns will be deleted
+#fillna()
+#fillna(value, inplace = True)
 
 import pandas as pd
 
@@ -14,6 +13,5 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-print("\n\nAfter removing the missing values:")
-df.dropna(inplace = True)
+df.fillna(0, inplace=True)
 print(df)
