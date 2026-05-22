@@ -9,5 +9,8 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
-
+print("\n\nMissing data: ")
 print(df.isnull())
+# For counting how many missing numbers
+print("\n\nMissing data's count are: ")
+print(df.isnull().sum())
