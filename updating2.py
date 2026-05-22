@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 data = {
@@ -12,3 +11,6 @@ df = pd.DataFrame(data)
 print(df)
 
 # increasing salary by 5%
+
+df['Salary'] = df['Salary'] * 1.05
+print(df)
